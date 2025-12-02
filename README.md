@@ -1,4 +1,6 @@
-# Commands Adapter <img src="assets/logo.svg" alt="Commands Adapter" width="28" height="28" style="vertical-align: text-bottom; margin-left: 6px;"/>
+# Commands Adapter
+
+<img src="assets/logo.svg" alt="Commands Adapter" width="512" height="512" style="margin-left: 6px;"/>
 
 一个统一的指令转换与互操作工具，支持在 Claude（`.claude/commands`）、Gemini（`.toml`）、Codex（`prompts/*.md`）三方之间进行批量互转，提供校验、事务报告、回滚与将产物快捷复制到项目根目录的能力。
 

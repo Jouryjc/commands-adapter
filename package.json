@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "批量将 .claude/commands 指令转换为 Gemini/Codex 平台配置",
+  "description": "支持 Claude/Gemini/Codex 三方批量互转的命令行工具，提供 IR 统一建模、Schema 校验、事务日志与回滚、快捷安装与往返差异报告（roundtrip）",
   "bin": {
     "cmd-adapter": "src/index.js"
   },
