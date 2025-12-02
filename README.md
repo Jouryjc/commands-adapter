@@ -78,6 +78,8 @@
 - 依赖管理：`npm i`
 - 本地运行：`npm start -- <args>` 或 `node src/index.js <command>`
 - 示例输入：`.claude/commands/example.json`
+- 运行本地单测：`npm test`
+- GitHub Actions：`.github/workflows/ci.yml`（构建与单测）
 
 ## 参考
 - Gemini CLI: Custom slash commands（.toml 与命令名规则）
