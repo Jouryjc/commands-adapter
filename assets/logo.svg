@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Commands Adapter Logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#0E1A2B"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="32" fill="url(#bg)" stroke="#1F2A44" stroke-width="2"/>
+
+  <!-- outer nodes representing Claude / Gemini / Codex -->
+  <circle cx="64" cy="84" r="18" fill="#7C4DFF" filter="url(#shadow)"/>
+  <circle cx="192" cy="84" r="18" fill="#00BCD4" filter="url(#shadow)"/>
+  <circle cx="128" cy="192" r="18" fill="#8BC34A" filter="url(#shadow)"/>
+
+  <!-- arrows towards the adapter -->
+  <g stroke="#95A3BF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 92 L112 108"/>
+    <path d="M174 92 L144 108"/>
+    <path d="M128 174 L128 144"/>
+    <polyline points="112,108 118,112 124,108"/>
+    <polyline points="144,108 138,112 132,108"/>
+    <polyline points="128,144 132,150 124,150"/>
+  </g>
+
+  <!-- central adapter: terminal prompt + slash command motif -->
+  <g transform="translate(88,104)">
+    <rect x="0" y="0" width="80" height="48" rx="8" fill="#111A2A" stroke="#2C3D5F"/>
+    <!-- >_ prompt -->
+    <polygon points="14,24 24,16 24,32" fill="#C7D2EA"/>
+    <rect x="32" y="26" width="14" height="4" fill="#C7D2EA"/>
+    <!-- slash command icon -->
+    <g transform="translate(54,10) rotate(20)">
+      <rect x="0" y="0" width="4" height="20" rx="2" fill="#7C9AEF"/>
+      <circle cx="2" cy="22" r="2.5" fill="#7C9AEF"/>
+    </g>
+  </g>
+
+  <!-- title text -->
+  <text x="128" y="38" fill="#C7D2EA" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial" font-size="16" text-anchor="middle">Commands Adapter</text>
+</svg>

@@ -1,0 +1,28 @@
+{
+  "name": "review",
+  "description": "审查代码改动并给出建议",
+  "arguments": [
+    {
+      "name": "issue",
+      "type": "string",
+      "required": false,
+      "hint": "Issue 编号"
+    }
+  ],
+  "prompt": "请审查当前工作区的改动，重点关注可读性与性能风险。",
+  "examples": [
+    "/review 1234"
+  ],
+  "metadata": {
+    "extra": {
+      "author": "adapter",
+      "tags": [
+        "review"
+      ]
+    }
+  },
+  "runtime": {
+    "model": "gpt-5-codex",
+    "temperature": 0.2
+  }
+}

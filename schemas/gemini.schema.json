@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "required": ["description", "prompt"],
+  "properties": {
+    "description": { "type": "string" },
+    "args": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "required": { "type": "boolean" },
+          "default": {},
+          "hint": { "type": "string" }
+        }
+      }
+    },
+    "prompt": { "type": "string" },
+    "docs": {
+      "type": "object",
+      "properties": {
+        "examples": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "preserve": { "type": "object" }
+  }
+}

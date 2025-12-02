@@ -1,0 +1,14 @@
+{
+  "install": {
+    "from": "./out",
+    "to": ".",
+    "platform": "all",
+    "strategy": "backup"
+  },
+  "stats": {
+    "copied": 2,
+    "skipped": 0,
+    "overwritten": 0,
+    "backedUp": 0
+  }
+}

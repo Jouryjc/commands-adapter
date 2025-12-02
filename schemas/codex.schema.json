@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": ["description", "argument-hint", "arguments"],
+  "properties": {
+    "description": { "type": "string" },
+    "argument-hint": { "type": "string" },
+    "arguments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "required": { "type": "boolean" },
+          "default": {},
+          "hint": { "type": "string" }
+        }
+      }
+    },
+    "x-preserve": { "type": "object" }
+  }
+}
